@@ -39,9 +39,9 @@ jobs:
     # gradlew 빌드
     - name: Build with Gradle
       run: ./gradlew clean build
-
-	#2
-	# AWS 계정 설정
+      
+    #2
+    # AWS 계정 설정
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v1
       with:
@@ -52,8 +52,8 @@ jobs:
       # 깃허브 Secret에 넣어둔 Region
         aws-region: ${{ env.AWS_REGION }}
 
-	#3
-	# 만들어 놓은 S3에 해당 zip 파일 저장
+    #3
+    # 만들어 놓은 S3에 해당 zip 파일 저장
     - name: Upload to AWS S3
       run: |
         aws deploy push \
