@@ -59,7 +59,7 @@ public class ApiController {
 
     @Autowired
     private JavaMailSender mailSender;
-    private static final String FROM_ADDRESS = "carencoinc@gmail.com";
+    private static final String FROM_ADDRESS = "shwoodysh@gmail.com";
 
     @PostMapping(value="/email")
     @ResponseBody
