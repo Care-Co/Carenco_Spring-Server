@@ -86,7 +86,7 @@ public class ApiController {
             mailHandler.setSubject("케어엔코");
             // 메시지
             mailHandler.setText("반갑습니다~");
-            mailHandler.setText(recentURL);
+            //mailHandler.setText(recentURL);
 //            // 첨부 파일
 //            mailHandler.setAttach("foot_image.jpg", recentURL);
 //            // 이미지 삽입
